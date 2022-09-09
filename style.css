@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #f1f2f6;
+}
+
+a {
+    text-decoration: none;
+}
+/*header*/
+header {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteiner_logo_mobile {
+    display: none;
+}
+
+.menu_desplegable {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-item {
+    font-weight: 600;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+}
+
+/*index*/
+.img-principal {
+    width: 100%;
+    height: 56.25%;
+}
+
+.conoce-educultura {
+    color: white;
+    position: absolute;
+    top: 46%;
+    left: 16.5%;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+    /*header*/
+    .conteiner_logo_mobile {
+        display: flex;
+    }
+
+    .conteiner_logo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_desplegable{
+        display: flex;
+        color: #f4a275;
+    }
+}
