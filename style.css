@@ -34,26 +34,20 @@ header {
     display: none;
 }
 
-.menu_desplegable {
-    display: none;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.menu-item {
-    font-weight: 600;
-    color: #f2f2f2;
-    padding: 10px 20px;
-    margin-top: 15px;
-}
-
-.menu a {
+.nav_link{
     color: white;
     font-weight: bold;
+}
+
+.nav_link:focus, .nav_link:hover{
+    color: #f4a261;
+}
+.dropdown_link{
+    color: white;
+}
+.dropdown_{
+    border-radius: 0;
+    background-color: black;
 }
 
 /*index*/
@@ -82,12 +76,8 @@ header {
         display: none;
     }
 
-    .menu {
+    /*index*/
+    .conoce-educultura{
         display: none;
-    }
-
-    .menu_desplegable{
-        display: flex;
-        color: #f4a275;
     }
 }
