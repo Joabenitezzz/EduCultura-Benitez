@@ -50,12 +50,58 @@ header {
     background-color: black;
 }
 
+/*footer*/
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 2%;
+}
+
+.box_footer {
+    display: flex;
+    padding: 0 3%;
+}
+
+.box_footer a {
+    color: white;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: row;
+    margin: 7%;
+}
+
+.redes a {
+    color: white;
+}
+
 /*index*/
 .img-principal {
     width: 100%;
     height: 56.25%;
 }
-
 .conoce-educultura {
     color: white;
     position: absolute;
@@ -64,6 +110,204 @@ header {
     font-weight: bold;
     font-size: 80px;
 }
+.conoce-educultura h1{
+    transition: all .2s;
+}
+.conoce-educultura:hover {
+    color: #f4a261;
+}
+.quienes_somos_txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 300%;
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 35%;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+.quienes_somos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+.quienes_somos p {
+    height: 280px;
+    max-width: 765px;
+    font-family: 'Varela Round', sans-serif;
+    padding: 2%;
+    margin-bottom: 5%;
+    font-size: large;
+    text-align: start;
+    margin-top: -3%;
+}
+.quienes_somos img{
+    margin-top: 3%;
+}
+.valores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.valores article {
+    background-color: #f4a261;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    width: 25%;
+    text-align: center;
+    padding: 3% 5%;
+}
+.valores p {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+.valores h3{
+    font-weight: bold;
+}
+#programas h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 300%;
+    margin-top: 6%;
+    margin-left: 32%;
+    width: 35%;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+#programas img {
+    margin: 7%;
+}
+.img_programas {
+    margin-left: 13%;
+}
+.img_programas img {
+    transition: all .3s;
+}
+.img_programas img:hover {
+    transform: scale(1.1);
+}
+
+/*galería*/
+.titulo_galeria h1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 300%;
+    width: 100%;
+    align-items: center;
+    margin-top: 5%;
+    padding: .7%;
+    font-weight: bold;
+    color: black;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.gallery_item {
+    position: relative;
+}
+.gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_item:nth-child(5) {
+    grid-column-start: span 2;
+}
+.gallery_item:nth-child(10) {
+    grid-column-end: span 2;
+}
+.gallery_item:nth-child(11) {
+    grid-column-start: span 3;
+}
+
+/*colaborar*/
+.como_colaborar_titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    width: 100%;
+    align-items: center;
+    margin-top: 5%;
+    padding: .7%;
+}
+.como_colaborar_titulo h1{
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+}
+.como_colaborar_opciones {
+    display: flex;
+    flex-direction: row;
+}
+.como_colaborar_opciones article {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4a261;
+    margin: 2% 2% 2% 1%;
+    padding: 2%;
+    align-items: center;
+    color: black;
+    transition: all .3s;
+}
+.como_colaborar_opciones article:hover{
+    transform: scale(1.1);
+}
+.como_colaborar_opciones article p {
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+}
+
+/*programas*/
+.paginas_programas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    padding: 1%;
+}
+
+.conteiner-paginas-programas{
+    margin-top: 100px;
+}
+
+.paginas_programas p {
+    padding: 1%;
+    width: 40%;
+}
+
+.paginas_programas img {
+    transition: all 1s;
+}
+
+.paginas_programas img:hover {
+    transform: scale(1.1);
+}
+
+.programaspages {
+    background-color: #f4a275;
+    background-image: linear-gradient(62deg, #f4a275 0%, #f4a261 50%, #fffb7d 100%);
+}
 
 /*mobile*/
 @media screen and (max-width: 480px) {
@@ -71,13 +315,65 @@ header {
     .conteiner_logo_mobile {
         display: flex;
     }
-
     .conteiner_logo {
         display: none;
+    }
+    .conteiner_quienes_somos_txt {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*footer*/
+    .box_footer {
+        display: none;
+    }
+    .footer {
+        justify-content: center;
+    }
+    .redes{
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+    }
+    .redes ul {
+        margin: 0;
     }
 
     /*index*/
     .conoce-educultura{
         display: none;
+    }
+    .quienes_somos_txt {
+        background-color: #f1f2f6;
+        font-size: 200%;
+        margin-left: 0;
+    }
+    .quienes_somos {
+        justify-content: center;
+        margin-bottom: 30%;
+    }
+    .quienes_somos p {
+        text-align: center;
+    }
+
+    /*galería*/
+    .titulo_galeria{
+        display: none;
+    }
+    .gallery-container{
+        margin-top: 6%;
+    }
+
+    /*colaborar*/
+    .como_colaborar_titulo{
+        display: none;
+    }
+    .como_colaborar_opciones{
+        margin-top: 8%;
+    }
+
+    /*programas*/
+    .paginas_programas p {
+        width: 80%;
     }
 }
